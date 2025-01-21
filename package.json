@@ -139,6 +139,7 @@
   },
   "packageManager": "yarn@1.22.17",
   "resolutions": {
-    "braces": "3.0.3"
+    "braces": "3.0.3",
+    "micromatch": "4.0.8"
   }
 }
