@@ -140,6 +140,7 @@
   "packageManager": "yarn@1.22.17",
   "resolutions": {
     "braces": "3.0.3",
-    "micromatch": "4.0.8"
+    "micromatch": "4.0.8",
+    "tar-fs": "2.1.3"
   }
 }
