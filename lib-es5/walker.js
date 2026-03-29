@@ -536,6 +536,9 @@ class Walker {
         record.body = body;
     }
     async stepDerivatives_ALIAS_AS_RELATIVE(record, marker, derivative) {
+        if (path_1.default.dirname(record.file).includes('../') || path_1.default.dirname(record.file).includes('..\\') || derivative.alias.includes('../') || derivative.alias.includes('..\\')) {
+            throw new Error('Invalid path detected');
+        }
         const file = (0, common_1.normalizePath)(path_1.default.join(path_1.default.dirname(record.file), derivative.alias));
         let stat;
         try {
